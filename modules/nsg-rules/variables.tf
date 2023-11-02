@@ -1,0 +1,11 @@
+variable nsg_rule_name {}
+variable nsg_rule_number {}
+variable in_or_out {}
+variable allow_or_deny {}
+variable tcp_or_udp {}
+variable source_port_range {}
+variable destination_port_range {}
+variable source_address_prefix {}
+variable destination_address_prefix {}
+variable rg_name {}
+variable network_security_group_name {}
