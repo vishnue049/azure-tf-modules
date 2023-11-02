@@ -1,0 +1,28 @@
+# $ terraform-docs markdown . | tee README.md
+# # README.md
+
+# This is the readme of the example repository for terraform-docs poc.
+
+# ## Requirements
+
+# | Name | Version |
+# |------|---------|
+# | terraform | 0.13.0 |
+
+# ## Providers
+
+# | Name | Version |
+# |------|---------|
+# | null | n/a |
+
+# ## Inputs
+
+# | Name | Description | Type | Default | Required |
+# |------|-------------|------|---------|:--------:|
+# | foo | Example variable | `string` | `"bar"` | no |
+
+# ## Outputs
+
+# | Name | Description |
+# |------|-------------|
+# | example | Some example output. |
