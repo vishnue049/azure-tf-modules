@@ -22,7 +22,7 @@ resource "azurerm_key_vault_access_policy" "azureb34-sp-access" {
   ]
 }
 
-resource "azurerm_key_vault_access_policy" "sreeharsha-access" {
+resource "azurerm_key_vault_access_policy" "vishnu-access" {
   key_vault_id = data.azurerm_key_vault.azureb34kv.id
   tenant_id    = data.azurerm_client_config.current.tenant_id
   object_id    = "9b0d53c3-8571-4780-bd20-1cefec1bd10f"

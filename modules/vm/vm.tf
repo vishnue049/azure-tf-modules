@@ -11,7 +11,7 @@ resource "azurerm_linux_virtual_machine" "vms" {
   network_interface_ids = [
     element(azurerm_network_interface.vms.*.id, count.index)
   ]
-  #depends_on = [azurerm_key_vault_access_policy.sreeharsha-access]
+  #depends_on = [azurerm_key_vault_access_policy.vishnu-access]
   os_disk {
     name                 = "vm0${count.index + 1}OSDisk"
     caching              = "ReadWrite"

@@ -8,7 +8,7 @@ resource "null_resource" "cluster" {
     ]
     connection {
       type        = "ssh"
-      user        = "adminsree"
+      user        = "adminvishnu"
       password = var.admin_password
       #host     = "${aws_instance.web-1.public_ip}"
       host = element(azurerm_public_ip.vms.*.ip_address, count.index)
