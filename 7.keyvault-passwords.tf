@@ -15,6 +15,6 @@ resource "azurerm_key_vault_secret" "vm-passwords" {
   value        = element(random_password.webservers.*.result, count.index)
   key_vault_id = module.kv1.kv_id
   depends_on = [
-    azurerm_key_vault_access_policy.azureb34-sp-access
+    azurerm_key_vault_access_policy.vishnu-access
   ]
 }

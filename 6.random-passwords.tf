@@ -1,4 +1,4 @@
-resource "random_password" "webservers" {
+resource "random_password" "webserverspw" {
   count            = 3
   length           = 16
   special          = true
