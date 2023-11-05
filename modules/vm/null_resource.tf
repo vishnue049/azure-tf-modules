@@ -4,7 +4,7 @@ resource "null_resource" "cluster" {
     inline = [
       "sudo apt update",
       "sudo apt install -y nginx jq net-tools unzip",
-      "echo \"<center><h1>Deployed By Terraform</h1></center>\" | sudo tee -a /var/www/html/index.html"
+      "echo \"<center><h1>Deployed via terraform</h1></center>\" | sudo tee -a /var/www/html/index.html"
     ]
     connection {
       type        = "ssh"
