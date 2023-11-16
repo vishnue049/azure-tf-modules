@@ -9,6 +9,7 @@ resource "random_password" "webservers" {
   min_upper        = 4
 }
 
+# key_vault
 resource "azurerm_key_vault_secret" "vm-passwords" {
   count        = 3 # 0 1 2
   name         = "${var.env}-webserver-password-${count.index + 1}"

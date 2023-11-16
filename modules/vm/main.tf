@@ -13,6 +13,7 @@ resource "azurerm_network_interface" "vms" {
   name                = "vms-nic-${count.index}"
   location            = var.location
   resource_group_name = var.rg_name
+
   ip_configuration {
     name                          = "vms-ipconfig-${count.index}"
     subnet_id                     = element(var.subnets, count.index)
